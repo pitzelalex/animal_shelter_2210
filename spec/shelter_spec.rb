@@ -45,8 +45,7 @@ RSpec.describe Shelter do
   end 
 
   describe '#call_pets' do
-      it 'returns a list of names with exclamation points appended' do
-        skip 
+      it 'returns a list of names with exclamation points appended' do 
 
         shelter = Shelter.new('Denver Animal Shelter', 5)
         shelter.add_pet('Salem')
