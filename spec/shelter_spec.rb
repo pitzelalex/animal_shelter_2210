@@ -90,4 +90,17 @@ RSpec.describe Shelter do
         expect(shelter.over_capacity?).to be true
       end
   end
+
+  describe '#adopt' do
+    it 'remove pets from shelter until it is no longer over capacity' do
+
+      shelter =Shelter.new("Denver Animal Shelter", 3)
+      shelter.add_pet('Salem')
+      shelter.add_pet('Beethoven')
+      shelter.add_pet('Spot')
+      shelter.add_pet('Jonesy')
+
+      expect((shelter.adopt).count).to eq(shelter.capacity)
+    end
+  end
 end
