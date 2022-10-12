@@ -68,4 +68,15 @@ RSpec.describe Shelter do
         expect(shelter.patrons).to eq(["Salem", "Beethoven", "Spot"])
       end
   end
+
+  describe '#over_capacity?' do
+      it 'returns false if not over capacity' do
+       
+        shelter =Shelter.new("Denver Animal Shelter", 3)
+        shelter.add_pet('Salem')
+        shelter.add_pet('Beethoven')
+
+        expect(shelter.over_capacity?).to be false
+      end
+  end
 end
