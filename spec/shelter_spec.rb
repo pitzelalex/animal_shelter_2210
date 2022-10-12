@@ -72,7 +72,7 @@ RSpec.describe Shelter do
   describe '#over_capacity?' do
       it 'returns false if under capacity' do
        
-        shelter =Shelter.new("Denver Animal Shelter", 3)
+        shelter = Shelter.new("Denver Animal Shelter", 3)
         shelter.add_pet('Salem')
         shelter.add_pet('Beethoven')
 
@@ -81,7 +81,7 @@ RSpec.describe Shelter do
 
       it 'returns true if over capacity' do
        
-        shelter =Shelter.new("Denver Animal Shelter", 3)
+        shelter = Shelter.new("Denver Animal Shelter", 3)
         shelter.add_pet('Salem')
         shelter.add_pet('Beethoven')
         shelter.add_pet('Spot')
@@ -94,7 +94,7 @@ RSpec.describe Shelter do
   describe '#adopt' do
     it 'remove pets from shelter until it is no longer over capacity' do
 
-      shelter =Shelter.new("Denver Animal Shelter", 3)
+      shelter = Shelter.new("Denver Animal Shelter", 3)
       shelter.add_pet('Salem')
       shelter.add_pet('Beethoven')
       shelter.add_pet('Spot')
