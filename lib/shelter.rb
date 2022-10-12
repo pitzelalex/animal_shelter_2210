@@ -23,4 +23,8 @@ class Shelter
     def patrons
         pets
     end
+
+    def over_capacity?
+        capacity <= pets.count
+    end 
 end
