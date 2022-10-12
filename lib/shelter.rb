@@ -25,6 +25,15 @@ class Shelter
     end
 
     def over_capacity?
-        capacity <= pets.count
+        capacity < pets.count
     end 
+
+    def adopt
+        if capacity >= pets.count
+        else until capacity >= pets.count
+            pets.shift
+            end
+        end
+        return pets
+    end
 end
