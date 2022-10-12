@@ -6,7 +6,6 @@ RSpec.describe Shelter do
   # Iteration 1
   describe '#initialize' do
     it 'is a Shelter' do
-      skip
 
       shelter = Shelter.new('Denver Animal Shelter', 5)
       expect(shelter).to be_a(Shelter)
