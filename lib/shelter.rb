@@ -19,4 +19,8 @@ class Shelter
         end
         return called_pets
     end
+
+    def patrons
+        pets
+    end
 end
